@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मतदाता खोज – श्री शशांक यादव (सीटू) | आगरा खंड स्नातक निर्वाचन क्षेत्र</title>
+  <style>
+    :root {
+      --sp-red: #d32f2f;
+      --sp-green: #2e7d32;
+      --sp-dark-red: #b71c1c;
+      --bg-light: #f7f9f8;
+      --text-main: #212121;
+    }
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      padding: 16px;
+    }
+
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e0e0e0;
+    }
+
+
+    /* Top Banner */
+    .header-card {
+      background: linear-gradient(135deg, var(--sp-red) 60%, var(--sp-green) 100%);
+      color: #ffffff;
+      padding: 24px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+
+    .candidate-tag {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      opacity: 0.95;
+    }
+
+
+    .candidate-name {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 6px 0 2px 0;
+      line-height: 1.2;
+    }
+
+
+    .constituency {
+      font-size: 15px;
+      font-weight: 500;
+      margin-top: 4px;
+      opacity: 0.95;
+    }
+
+
+    /* Appeal Box */
+    .appeal-banner {
+      background: #e8f5e9;
+      border-left: 5px solid var(--sp-green);
+      margin: 16px;
+      padding: 12px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #1b5e20;
+    }
+
+
+    /* Voting Info Badge */
+    .info-badge {
+      background: #fff3e0;
+      border: 1px solid #ffe0b2;
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin: 0 16px 16px 16px;
+      text-align: center;
+      font-weight: 600;
+      color: #e65100;
+      font-size: 14px;
+    }
+
+
+    /* Ballot Sample */
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--sp-dark-red);
+      text-align: center;
+      margin: 20px 0 10px 0;
+    }
+
+
+    .ballot-table {
+      width: calc(100% - 32px);
+      margin: 0 16px 20px 16px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+
+    .ballot-table th, .ballot-table td {
+      border: 1px solid #c8d6cb;
+      padding: 8px 6px;
+      text-align: center;
+    }
+
+
+    .ballot-table th {
+      background-color: #f1f8f4;
+      color: #2c3e50;
+      font-weight: 700;
+    }
+
+
+    .ballot-highlight {
+      background-color: #f9fbe7;
+      font-weight: 600;
+    }
+
+
+    .priority-mark {
+      font-size: 20px;
+      font-weight: 900;
+      color: #000;
+      background: #eee;
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 4px;
+    }
+
+
+    /* Search Form */
+    .search-card {
+      background: #ffffff;
+      border-top: 3px solid var(--sp-green);
+      padding: 20px 16px;
+    }
+
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #424242;
+    }
+
+
+    .form-control {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+
+    .form-control:focus {
+      border-color: var(--sp-green);
+    }
+
+
+    .btn-search {
+      width: 100%;
+      background: linear-gradient(to right, var(--sp-red), var(--sp-green));
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+      margin-top: 8px;
+    }
+
+
+    .btn-search:hover {
+      opacity: 0.95;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container">
+    <!-- Header Banner -->
+    <div class="header-card">
+      <div class="candidate-tag">समाजवादी पार्टी अधिकृत प्रत्याशी</div>
+      <div class="candidate-name">श्री शशांक यादव (सीटू)</div>
+      <div class="constituency">आगरा खंड स्नातक निर्वाचन क्षेत्र</div>
+    </div>
+
+
+    <!-- Voter Appeal -->
+    <div class="appeal-banner">
+      <strong>सम्मानित मतदाता साथियों,</strong><br>
+      आगरा खंड स्नातक क्षेत्र के सभी प्रबुद्ध मतदाताओं को सूचित किया जाता है कि अब आप घर बैठे वोटर लिस्ट में अपना नाम आसानी से खोज सकते हैं।
+    </div>
+
+
+    <!-- Date/Time Info -->
+    <div class="info-badge">
+      मतपत्र पर नाम के सामने <strong>1</strong> लिखकर भारी मतों से विजयी बनायें!
+    </div>
+
+
+    <!-- Sample Ballot -->
+    <div class="section-title">मतदान पत्र का नमूना</div>
+    <table class="ballot-table">
+      <thead>
+        <tr>
+          <th style="width: 12%;">क्रम</th>
+          <th style="width: 50%;">प्रत्याशी का नाम</th>
+          <th style="width: 18%;">प्रतीक/फोटो</th>
+          <th style="width: 20%;">वरीयता</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="ballot-highlight">
+          <td><strong>1.</strong></td>
+          <td style="text-align: left; padding-left: 8px;">
+            <strong>श्री शशांक यादव (सीटू)</strong><br>
+            <span style="font-size: 11px; color: #555;">समाजवादी पार्टी</span>
+          </td>
+          <td>[फोटो]</td>
+          <td><span class="priority-mark">1</span></td>
+        </tr>
+        <tr><td>2.</td><td>---</td><td></td><td></td></tr>
+        <tr><td>3.</td><td>---</td><td></td><td></td></tr>
+        <tr><td>4.</td><td>---</td><td></td><td></td></tr>
+      </tbody>
+    </table>
+
+
+    <!-- Search Form -->
+    <div class="search-card">
+      <div class="section-title" style="margin-top: 0; text-align: left;">अपना नाम खोजें / Find Your Vote</div>
+
+
+      <div class="form-group">
+        <label for="district">जिला चुनें / Select District</label>
+        <select id="district" class="form-control">
+          <option value="all">सभी जिले / All districts</option>
+          <option value="agra" selected>Agra (आगरा)</option>
+          <option value="aligarh">Aligarh (अलीगढ़)</option>
+          <option value="auraiya">Auraiya (औरैया)</option>
+          <option value="etah">Etah (एटा)</option>
+          <option value="etawah">Etawah (इटावा)</option>
+          <option value="farrukhabad">Farrukhabad (फर्रुखाबाद)</option>
+          <option value="firozabad">Firozabad (फिरोजाबाद)</option>
+          <option value="hathras">Hathras (हाथरस)</option>
+          <option value="kannauj">Kannauj (कन्नौज)</option>
+          <option value="kasganj">Kasganj (कासगंज)</option>
+          <option value="mainpuri">Mainpuri (मैनपुरी)</option>
+          <option value="mathura">Mathura (मथुरा)</option>
+        </select>
+      </div>
+
+
+      <div class="form-group">
+        <label for="name">आपका नाम / Your Name *</label>
+        <input type="text" id="name" class="form-control" placeholder="उदा. अमित कुमार">
+      </div>
+
+
+      <div class="form-group">
+        <label for="fname">पिता/पति का नाम / Father/Husband Name</label>
+        <input type="text" id="fname" class="form-control" placeholder="उदा. राम सिंह">
+      </div>
+
+
+      <div class="form-group">
+        <label for="dob">जन्म वर्ष / Birth Year (वैकल्पिक)</label>
+        <input type="number" id="dob" class="form-control" placeholder="उदा. 1995">
+      </div>
+
+
+      <button type="button" class="btn-search" onclick="alert('खोज प्रक्रिया प्रारंभ की जा रही है...')">खोजें / Search</button>
+    </div>
+  </div>
+
+
+</body>
+</html>
